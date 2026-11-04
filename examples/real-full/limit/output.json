@@ -1,0 +1,106 @@
+{
+  "run_id": "59aae8e2-6730-406d-871b-571a789e4890",
+  "provider": "deepseek",
+  "model_config": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "status": "incomplete",
+  "reason_code": "LIMIT_REACHED",
+  "reason": "累计模型决策或工具调用次数达到上限；已成功产物仍保留。",
+  "input": {
+    "theme": "秋季新品推广，优先评估高质感短视频，超预算可改用轻量图文",
+    "budget": "10",
+    "deadline": "2026-11-05T14:02:47.879979+08:00"
+  },
+  "missing_fields": [],
+  "plan": {
+    "material_id": "premium",
+    "objective": "秋季新品推广：以高质感短视频突出新品卖点与品牌调性，驱动认知与种草",
+    "channel": "短视频（抖音/视频号）",
+    "version": 1
+  },
+  "plan_history": [],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "premium",
+      "plan_version": 1
+    },
+    "estimate-v1-before-script": {
+      "status": "pending",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "script": {
+      "status": "pending",
+      "depends_on": [
+        "estimate-v1-before-script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "estimate-v1-before-save": {
+      "status": "pending",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "save": {
+      "status": "pending",
+      "depends_on": [
+        "script",
+        "estimate-v1-before-save"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    }
+  },
+  "script": null,
+  "archived_scripts": [],
+  "estimate": null,
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 2,
+    "tools": 2
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 2
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T06:05:14.935079+00:00",
+  "updated_at": "2026-11-04T06:05:18.689813+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "10.00",
+  "completion_estimate": {
+    "signature": "854ab2bf12ab882439b385e2dae645fa0178e1f037410d2fb776dd7ffdf2d788",
+    "plan_version": 1,
+    "spent": "0.00",
+    "remaining_cost": "12.00",
+    "completion_total": "12.00",
+    "budget_gap": "2.00",
+    "remaining_minutes": 101,
+    "expected_finish": "2026-11-04T07:46:18.689813+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [],
+    "feasible": false
+  },
+  "trace_count": 2,
+  "evidence_boundary": "real_model_tool_decisions"
+}

@@ -1,0 +1,42 @@
+{
+  "run_id": "734eb042-9cd2-4ad4-8e8d-56af4c3c6ee0",
+  "provider": "mock",
+  "model_config": {
+    "model": "offline-policy",
+    "base_url": null
+  },
+  "status": "needs_input",
+  "reason_code": "MISSING_FIELDS",
+  "reason": "请补齐：deadline",
+  "input": {
+    "theme": "秋季新品推广",
+    "budget": "20",
+    "deadline": null
+  },
+  "missing_fields": [
+    "deadline"
+  ],
+  "plan": null,
+  "plan_history": [],
+  "steps": {},
+  "script": null,
+  "archived_scripts": [],
+  "estimate": null,
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 0,
+    "tools": 0
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T05:20:54.595054+00:00",
+  "updated_at": "2026-11-04T05:20:54.595054+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "20.00",
+  "trace_count": 0,
+  "evidence_boundary": "offline_mock_flow_only"
+}

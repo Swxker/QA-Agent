@@ -1,0 +1,47 @@
+{
+  "run_id": "4795539f-6be7-46de-a0b2-74bf93ec8d64",
+  "provider": "mock",
+  "model_config": {
+    "model": "offline-policy",
+    "base_url": null
+  },
+  "status": "incomplete",
+  "reason_code": "MODEL_STOPPED",
+  "reason": "没有匹配主题的素材。",
+  "input": {
+    "theme": "深海科学展览",
+    "budget": "20",
+    "deadline": "2026-11-05T13:20:54.053114+08:00"
+  },
+  "missing_fields": [],
+  "plan": null,
+  "plan_history": [],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    }
+  },
+  "script": null,
+  "archived_scripts": [],
+  "estimate": null,
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 2,
+    "tools": 2
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T05:20:54.613656+00:00",
+  "updated_at": "2026-11-04T05:20:54.668441+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "20.00",
+  "trace_count": 2,
+  "evidence_boundary": "offline_mock_flow_only"
+}

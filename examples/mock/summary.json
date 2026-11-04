@@ -1,0 +1,227 @@
+{
+  "provider": "mock",
+  "database": ".runtime\\evaluation-db09d22b244d419bb6151510f6324771.sqlite3",
+  "results": [
+    {
+      "case": "normal",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "12.00",
+      "counts": {
+        "decisions": 7,
+        "tools": 7
+      },
+      "run_id": "383ff54c-1f07-4015-934f-0fb19926d141",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "budget-replan",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "8.00",
+      "counts": {
+        "decisions": 9,
+        "tools": 9
+      },
+      "run_id": "dc6f23e0-23ea-411e-a5f8-defc670c562d",
+      "checks": {
+        "expected_status": true,
+        "observed_12_then_8": true,
+        "spent_8": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "budget-impossible",
+      "status": "incomplete",
+      "reason_code": "MODEL_STOPPED",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 6,
+        "tools": 6
+      },
+      "run_id": "5829a9be-3682-4de9-924d-1cb04304e150",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "missing-budget",
+      "status": "needs_input",
+      "reason_code": "MISSING_FIELDS",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 0,
+        "tools": 0
+      },
+      "run_id": "db711cf1-58a8-44b2-b1dd-79a12f34bd57",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "missing-deadline",
+      "status": "needs_input",
+      "reason_code": "MISSING_FIELDS",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 0,
+        "tools": 0
+      },
+      "run_id": "734eb042-9cd2-4ad4-8e8d-56af4c3c6ee0",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "missing-materials",
+      "status": "incomplete",
+      "reason_code": "MODEL_STOPPED",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 2,
+        "tools": 2
+      },
+      "run_id": "4795539f-6be7-46de-a0b2-74bf93ec8d64",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "partial-materials",
+      "status": "incomplete",
+      "reason_code": "MODEL_STOPPED",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 4,
+        "tools": 4
+      },
+      "run_id": "81aa1b34-0b61-40da-8462-07b5622410ea",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "time-replan",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "8.00",
+      "counts": {
+        "decisions": 9,
+        "tools": 9
+      },
+      "run_id": "243499f3-39f5-483d-8069-30d1928f06fc",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "time-impossible",
+      "status": "incomplete",
+      "reason_code": "MODEL_STOPPED",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 6,
+        "tools": 6
+      },
+      "run_id": "3a6327f6-dc8c-4419-a645-d1142c77c0f2",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "tool-failure",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "8.00",
+      "counts": {
+        "decisions": 10,
+        "tools": 10
+      },
+      "run_id": "aa6e6a22-6fa3-497c-8dcb-4605adc2cc02",
+      "checks": {
+        "expected_status": true,
+        "failure_recorded": true,
+        "failed_attempts_free": true,
+        "script_generated_once": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "persistent-failure",
+      "status": "incomplete",
+      "reason_code": "MODEL_STOPPED",
+      "spent": "2.00",
+      "counts": {
+        "decisions": 10,
+        "tools": 10
+      },
+      "run_id": "f404ed52-e024-4a18-9d4a-cd43b21382be",
+      "checks": {
+        "expected_status": true,
+        "failure_recorded": true,
+        "failed_attempts_free": true,
+        "script_generated_once": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "repeat",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "8.00",
+      "counts": {
+        "decisions": 9,
+        "tools": 9
+      },
+      "run_id": "148c615f-2148-46e5-a6be-54fd52ec0c42",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "resume",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "8.00",
+      "counts": {
+        "decisions": 12,
+        "tools": 12
+      },
+      "run_id": "3d11b876-19ee-4615-b77f-ddf68dce5390",
+      "checks": {
+        "expected_status": true,
+        "failure_recorded": true,
+        "failed_attempts_free": true,
+        "script_generated_once": true,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "limit",
+      "status": "incomplete",
+      "reason_code": "LIMIT_REACHED",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 2,
+        "tools": 2
+      },
+      "run_id": "6ddac883-6d5b-4375-b348-f900e1a5f918",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true
+      }
+    }
+  ]
+}

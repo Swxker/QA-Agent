@@ -1,0 +1,15 @@
+{
+  "started_at_first_record": "2026-11-04T05:55:11.976244+00:00",
+  "finished_at": "2026-11-04T06:06:27.308812+00:00",
+  "observed_interval_seconds": 675,
+  "reported_usage_all_attempts_deduplicated": {
+    "prompt_tokens": 733824,
+    "completion_tokens": 25949,
+    "total_tokens": 759773
+  },
+  "usage_boundary": "Only successfully returned API responses; includes failed first full acceptance and successful rerun, not a billing statement.",
+  "latest_test_passed": 51,
+  "real_full_cases_passed": 14,
+  "first_full_cases_passed": 13,
+  "key_written_to_repository": false
+}

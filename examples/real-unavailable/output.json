@@ -1,0 +1,40 @@
+{
+  "run_id": "6b928a8d-416c-4fb5-b7f3-e9fe13c86d82",
+  "provider": "deepseek",
+  "model_config": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "status": "incomplete",
+  "reason_code": "CONFIGURATION_ERROR",
+  "reason": "DEEPSEEK_API_KEY is required; use --provider mock explicitly for offline runs",
+  "input": {
+    "theme": "秋季新品推广，优先评估高质感短视频，超预算可改用轻量图文",
+    "budget": "10",
+    "deadline": "2026-11-02T22:29:15.110505+08:00"
+  },
+  "missing_fields": [],
+  "plan": null,
+  "plan_history": [],
+  "steps": {},
+  "script": null,
+  "archived_scripts": [],
+  "estimate": null,
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 0,
+    "tools": 0
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-01T14:29:48.558701+00:00",
+  "updated_at": "2026-11-01T14:29:48.558701+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "10.00",
+  "trace_count": 0,
+  "evidence_boundary": "no_real_model_decision_evidence"
+}

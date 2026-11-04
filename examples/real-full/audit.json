@@ -1,0 +1,225 @@
+{
+  "all_passed": true,
+  "cases": [
+    {
+      "case": "budget-impossible",
+      "status": "incomplete",
+      "spent": "0",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "budget-replan",
+      "status": "completed",
+      "spent": "8.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true,
+        "saved_and_within_budget": true,
+        "saved_total_matches": true
+      }
+    },
+    {
+      "case": "limit",
+      "status": "incomplete",
+      "spent": "0",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "missing-budget",
+      "status": "needs_input",
+      "spent": "0",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "missing-deadline",
+      "status": "needs_input",
+      "spent": "0",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "missing-materials",
+      "status": "incomplete",
+      "spent": "0",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "normal",
+      "status": "completed",
+      "spent": "8.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true,
+        "saved_and_within_budget": true,
+        "saved_total_matches": true
+      }
+    },
+    {
+      "case": "partial-materials",
+      "status": "incomplete",
+      "spent": "0",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "persistent-failure",
+      "status": "incomplete",
+      "spent": "2.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "repeat",
+      "status": "completed",
+      "spent": "8.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true,
+        "saved_and_within_budget": true,
+        "saved_total_matches": true
+      }
+    },
+    {
+      "case": "repeat-second",
+      "status": "completed",
+      "spent": "8.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true,
+        "saved_and_within_budget": true,
+        "saved_total_matches": true
+      }
+    },
+    {
+      "case": "resume",
+      "status": "incomplete",
+      "spent": "2.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "resume-after",
+      "status": "completed",
+      "spent": "8.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true,
+        "saved_and_within_budget": true,
+        "saved_total_matches": true
+      }
+    },
+    {
+      "case": "time-impossible",
+      "status": "incomplete",
+      "spent": "0",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true
+      }
+    },
+    {
+      "case": "time-replan",
+      "status": "completed",
+      "spent": "8.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true,
+        "saved_and_within_budget": true,
+        "saved_total_matches": true
+      }
+    },
+    {
+      "case": "tool-failure",
+      "status": "completed",
+      "spent": "8.00",
+      "checks": {
+        "ledger_matches_total": true,
+        "trace_charges_match_ledger": true,
+        "unique_charge_keys": true,
+        "failed_attempts_free": true,
+        "within_limits": true,
+        "saved_and_within_budget": true,
+        "saved_total_matches": true
+      }
+    }
+  ],
+  "cross_checks": {
+    "repeat_preserves_success": true,
+    "resume_preserves_success": true
+  },
+  "unique_runs": 14,
+  "reported_models": [
+    "deepseek-flash"
+  ],
+  "usage_unique_run_events": {
+    "prompt_tokens": 282233,
+    "completion_tokens": 11329,
+    "total_tokens": 293562
+  },
+  "usage_boundary": "Reported successful API responses only; not a billing reconciliation; repeated snapshots deduplicated."
+}

@@ -1,0 +1,123 @@
+{
+  "run_id": "1d4f0884-2987-401a-8e3d-c552f9fea620",
+  "provider": "deepseek",
+  "model_config": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "status": "incomplete",
+  "reason_code": "MODEL_STOPPED",
+  "reason": "素材检索仅返回一个候选（“公益活动产品配图”，覆盖 product，费用 3、需 20 分钟准备）。两次检索均未得到任何覆盖 brand 的素材，因此计划估计为 feasible=false，missing_coverage=[\"brand\"]。预算 20 与时限本身充足，但在没有 brand 覆盖素材的情况下，按规则无法生成且不能保存部分覆盖的计划。",
+  "input": {
+    "theme": "公益活动",
+    "budget": "20",
+    "deadline": "2026-11-05T14:02:47.879979+08:00"
+  },
+  "missing_fields": [],
+  "plan": {
+    "material_id": "partial",
+    "objective": "公益活动宣传：介绍公益产品与品牌理念，动员参与",
+    "channel": "社交媒体短视频",
+    "version": 1
+  },
+  "plan_history": [],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 1
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "partial",
+      "plan_version": 1
+    },
+    "estimate-v1-before-script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v1-before-script",
+      "plan_version": 1
+    },
+    "script": {
+      "status": "pending",
+      "depends_on": [
+        "estimate-v1-before-script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "estimate-v1-before-save": {
+      "status": "pending",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "save": {
+      "status": "pending",
+      "depends_on": [
+        "script",
+        "estimate-v1-before-save"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    }
+  },
+  "script": null,
+  "archived_scripts": [],
+  "estimate": {
+    "signature": "854ab2bf12ab882439b385e2dae645fa0178e1f037410d2fb776dd7ffdf2d788",
+    "plan_version": 1,
+    "spent": "0.00",
+    "remaining_cost": "6.00",
+    "completion_total": "6.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 31,
+    "expected_finish": "2026-11-04T06:34:37.563680+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [
+      "brand"
+    ],
+    "feasible": false,
+    "step_id": "estimate-v1-before-script"
+  },
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 6,
+    "tools": 6
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T06:03:32.200659+00:00",
+  "updated_at": "2026-11-04T06:03:39.956015+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "20.00",
+  "completion_estimate": {
+    "signature": "854ab2bf12ab882439b385e2dae645fa0178e1f037410d2fb776dd7ffdf2d788",
+    "plan_version": 1,
+    "spent": "0.00",
+    "remaining_cost": "6.00",
+    "completion_total": "6.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 31,
+    "expected_finish": "2026-11-04T06:34:39.956015+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [
+      "brand"
+    ],
+    "feasible": false
+  },
+  "trace_count": 6,
+  "evidence_boundary": "real_model_tool_decisions"
+}

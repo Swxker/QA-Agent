@@ -1,0 +1,116 @@
+{
+  "plan_id": "plan-7e596fa6-ae64-4cbb-871c-0fcc7a5e8e18",
+  "theme": "秋季新品推广",
+  "plan": {
+    "material_id": "basic",
+    "objective": "秋季新品推广：以轻量图文素材包突出新品卖点并强化品牌形象，覆盖秋季新款产品与品牌调性。",
+    "channel": "图文社交媒体",
+    "version": 1
+  },
+  "script": {
+    "id": "script-b6530fd88b942456",
+    "title": "秋意上新 · 轻装出发",
+    "body": "【秋季新品推广 · 图文社交媒体脚本】\n\n一、拍摄/画面基调\n以暖米色、焦糖棕与银杏金为主色调，自然光拍摄，突出秋季的柔软质感。整体画面干净克制，以\"轻\"与\"暖\"为视觉关键词，呼应品牌一贯的简约生活美学。\n\n二、图文结构（共6张/组，可拆为两条连发）\n\n第1图｜封面\n画面：一件秋季新品上衣搭配落叶背景，中景构图。\n文案主标：「秋意上新 · 轻装出发」\n副标：本季新品，已抵达。\n品牌标识位于右下角，保持统一版式。\n\n第2图｜产品细节\n画面：面料纹理特写 + 局部剪裁。\n文案：软糯触感，垂坠有型。\n说明：不讲参数堆砌，只讲穿着时的第一感受，让新品卖点自然落地。\n\n第3图｜秋季场景\n画面：通勤路上、咖啡馆、傍晚散步三个小场景拼图。\n文案：从早高峰到黄昏街角，一整天都贴合。\n作用：用生活场景承载新品\"一衣多穿\"的实用价值。\n\n第4图｜搭配建议\n画面：平铺搭配图，新品 + 基础款组合。\n文案：三件基础，一种新感觉。\n作用：降低用户的搭配决策成本，引导全套加购。\n\n第5图｜品牌表达\n画面：品牌工作室一角或工艺手部特写。\n文案：我们把时间，花在你看不见的地方。\n说明：以品牌价值观呼应新品，建立信任而非促销压迫感。\n\n第6图｜收尾与行动\n画面：新品全系列合影，留白充足。\n文案：秋季新品，现已上架。\n引导语：收藏这份秋日清单。\n\n三、发布正文（约120字）\n风一吹，就知道秋天到了。\n本季新品延续品牌一贯的简约与舒适，用更轻的面料、更暖的色调，陪你走完整个秋天。\n从通勤到周末散步，一件就够了。\n秋季新品已上架，收藏这份秋日清单，慢慢挑。\n\n四、话题标签\n#秋季新品 #品牌上新 #秋日穿搭 #轻装出发 #本季精选\n\n五、合规与执行提示\n1. 所有产品描述基于实际材质与工艺，避免\"最\"\"第一\"等绝对化表述。\n2. 图片须使用素材包内已授权素材，品牌标识位置与尺寸保持一致。\n3. 建议发布节奏：封面+细节图先行，48小时内跟进场景与搭配图，形成二次触达。\n4. 评论区置顶新品系列汇总，承接用户询问。",
+    "material_ids": [
+      "basic"
+    ],
+    "plan_version": 1
+  },
+  "material": {
+    "id": "basic",
+    "name": "轻量图文素材包",
+    "topics": [
+      "新品",
+      "推广",
+      "秋季"
+    ],
+    "coverage": [
+      "product",
+      "brand"
+    ],
+    "license_cost": "5",
+    "minutes": 30
+  },
+  "execution_steps": [
+    "检索并核对素材",
+    "选择活动形式与目标",
+    "核算预算和耗时",
+    "生成脚本",
+    "复核后保存方案"
+  ],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "basic",
+      "plan_version": 1
+    },
+    "estimate-v1-before-script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v1-before-script",
+      "plan_version": 1
+    },
+    "script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select",
+        "estimate-v1-before-script"
+      ],
+      "artifact_id": "script-b6530fd88b942456",
+      "plan_version": 1
+    },
+    "estimate-v1-before-save": {
+      "status": "succeeded",
+      "depends_on": [
+        "select",
+        "script"
+      ],
+      "artifact_id": "estimate-v1-before-save",
+      "plan_version": 1
+    },
+    "save": {
+      "status": "succeeded",
+      "depends_on": [
+        "script",
+        "estimate-v1-before-save"
+      ],
+      "artifact_id": "plan-7e596fa6-ae64-4cbb-871c-0fcc7a5e8e18",
+      "plan_version": 1
+    }
+  },
+  "ledger": [
+    {
+      "key": "script-b6530fd88b942456",
+      "amount": "2.00",
+      "label": "script generation"
+    },
+    {
+      "key": "plan-7e596fa6-ae64-4cbb-871c-0fcc7a5e8e18:license",
+      "amount": "5.00",
+      "label": "material license"
+    },
+    {
+      "key": "plan-7e596fa6-ae64-4cbb-871c-0fcc7a5e8e18:save",
+      "amount": "1.00",
+      "label": "plan save"
+    }
+  ],
+  "total_cost": "8.00",
+  "budget_remaining": "12.00",
+  "deadline": "2026-11-05T14:02:47.879979+08:00",
+  "saved_at": "2026-11-04T06:03:00.068963+00:00",
+  "remaining_preparation_minutes": 31,
+  "expected_finish": "2026-11-04T06:34:00.068963+00:00",
+  "notice": "合成素材与模拟费用；此记录证明方案保存，不代表活动已发布。"
+}

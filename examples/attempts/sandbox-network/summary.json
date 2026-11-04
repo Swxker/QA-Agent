@@ -1,0 +1,41 @@
+{
+  "provider": "deepseek",
+  "database": ".runtime\\evaluation-bf62b52b7afd4da3bf8300a3bbd50cd8.sqlite3",
+  "results": [
+    {
+      "case": "budget-replan",
+      "status": "incomplete",
+      "reason_code": "MODEL_ERROR",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 1,
+        "tools": 0
+      },
+      "run_id": "075804ed-9a3b-49e5-85ac-1713a6fd9918",
+      "checks": {
+        "expected_status": false,
+        "observed_12_then_8": false,
+        "spent_8": false,
+        "within_call_limits": true
+      }
+    },
+    {
+      "case": "tool-failure",
+      "status": "incomplete",
+      "reason_code": "MODEL_ERROR",
+      "spent": "0.00",
+      "counts": {
+        "decisions": 1,
+        "tools": 0
+      },
+      "run_id": "7df694fe-f2f4-4278-bf96-522f037ec2d5",
+      "checks": {
+        "expected_status": false,
+        "failure_recorded": false,
+        "failed_attempts_free": true,
+        "script_generated_once": false,
+        "within_call_limits": true
+      }
+    }
+  ]
+}

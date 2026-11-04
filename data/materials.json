@@ -1,0 +1,5 @@
+[
+  {"id":"premium","name":"高质感新品短视频素材包","topics":["新品","推广","秋季"],"coverage":["product","brand"],"license_cost":"9","minutes":90},
+  {"id":"basic","name":"轻量图文素材包","topics":["新品","推广","秋季"],"coverage":["product","brand"],"license_cost":"5","minutes":30},
+  {"id":"partial","name":"公益活动产品配图","topics":["公益"],"coverage":["product"],"license_cost":"3","minutes":20}
+]

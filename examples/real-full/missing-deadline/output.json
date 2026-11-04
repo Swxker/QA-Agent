@@ -1,0 +1,42 @@
+{
+  "run_id": "0b5b7802-1f92-4929-a213-04cb82b7d395",
+  "provider": "deepseek",
+  "model_config": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "status": "needs_input",
+  "reason_code": "MISSING_FIELDS",
+  "reason": "请补齐：deadline",
+  "input": {
+    "theme": "秋季新品推广",
+    "budget": "20",
+    "deadline": null
+  },
+  "missing_fields": [
+    "deadline"
+  ],
+  "plan": null,
+  "plan_history": [],
+  "steps": {},
+  "script": null,
+  "archived_scripts": [],
+  "estimate": null,
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 0,
+    "tools": 0
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T06:03:26.938313+00:00",
+  "updated_at": "2026-11-04T06:03:26.938313+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "20.00",
+  "trace_count": 0,
+  "evidence_boundary": "no_real_model_decision_evidence"
+}

@@ -1,0 +1,350 @@
+{
+  "run_id": "f3dfa754-00a7-4f04-bc6d-d11337be028d",
+  "provider": "deepseek",
+  "model_config": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "status": "completed",
+  "reason_code": "SAVED",
+  "reason": null,
+  "input": {
+    "theme": "秋季新品推广",
+    "budget": "20",
+    "deadline": "2026-11-04T14:58:36.569287+08:00"
+  },
+  "missing_fields": [],
+  "plan": {
+    "material_id": "basic",
+    "objective": "推广秋季新品，突出产品卖点与品牌调性，形成可执行的轻量图文推广方案",
+    "channel": "图文/社交媒体",
+    "version": 2
+  },
+  "plan_history": [
+    {
+      "plan": {
+        "material_id": "premium",
+        "objective": "推广秋季新品，突出产品卖点与品牌调性，形成可执行的短视频推广方案",
+        "channel": "短视频",
+        "version": 1
+      },
+      "steps": {
+        "search": {
+          "status": "succeeded",
+          "depends_on": [],
+          "artifact_id": "search-results",
+          "plan_version": 0
+        },
+        "select": {
+          "status": "succeeded",
+          "depends_on": [
+            "search"
+          ],
+          "artifact_id": "premium",
+          "plan_version": 1
+        },
+        "estimate-v1-before-script": {
+          "status": "succeeded",
+          "depends_on": [
+            "select"
+          ],
+          "artifact_id": "estimate-v1-before-script",
+          "plan_version": 1
+        },
+        "script": {
+          "status": "pending",
+          "depends_on": [
+            "estimate-v1-before-script"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        },
+        "estimate-v1-before-save": {
+          "status": "pending",
+          "depends_on": [
+            "script"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        },
+        "save": {
+          "status": "pending",
+          "depends_on": [
+            "script",
+            "estimate-v1-before-save"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        }
+      }
+    }
+  ],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "basic",
+      "plan_version": 2
+    },
+    "estimate-v1-before-script": {
+      "status": "superseded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v1-before-script",
+      "plan_version": 1
+    },
+    "script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select",
+        "estimate-v2-before-script"
+      ],
+      "artifact_id": "script-8caf2dab8a976187",
+      "plan_version": 2
+    },
+    "estimate-v1-before-save": {
+      "status": "superseded",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "save": {
+      "status": "succeeded",
+      "depends_on": [
+        "script",
+        "estimate-v2-before-save"
+      ],
+      "artifact_id": "plan-f3dfa754-00a7-4f04-bc6d-d11337be028d",
+      "plan_version": 2
+    },
+    "estimate-v2-before-script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v2-before-script",
+      "plan_version": 2
+    },
+    "estimate-v2-before-save": {
+      "status": "succeeded",
+      "depends_on": [
+        "select",
+        "script"
+      ],
+      "artifact_id": "estimate-v2-before-save",
+      "plan_version": 2
+    }
+  },
+  "script": {
+    "id": "script-8caf2dab8a976187",
+    "title": "秋日新序章｜秋季新品图文推广脚本",
+    "body": "【核心定位】\n以\"秋日新序章\"为概念，用轻量图文形式呈现秋季新品，兼顾产品卖点与品牌调性，适配社交媒体双端（微信/小红书）。\n\n【视觉基调】\n主色：枫叶橙、燕麦米、深咖；质感：干净留白、自然光、浅景深；版式：左文右图，统一圆角卡片。\n\n【图1｜封面：秋天的第一份新意】\n画面：新品主体于暖色背景前，旁置一片枫叶与一杯热饮。\n文案主标题：秋天的第一份新意，已经准备好。\n副标题：秋季新品 · 系列上市\n\n【图2｜产品特写：看得见的细节】\n画面：产品局部工艺与材质微距特写，配手部持握场景。\n文案：从材质到细节，每一处都为日常打磨。\n要点条列：① 选材更耐用 ② 触感更温润 ③ 使用更顺手\n（卖点数据以产品实际参数为准，发布前由品牌方核对）\n\n【图3｜场景：融入秋天的一天】\n画面：通勤、午后阅读、傍晚散步三格拼图。\n文案：从清晨到黄昏，它陪你把秋天过得更从容。\n\n【图4｜品牌：我们为什么做这件新品】\n画面：品牌工作场景或设计手稿，低饱和暖调。\n文案：我们相信，好设计应该让生活更轻松。\n品牌承诺：坚持品质、注重细节、持续倾听用户反馈。\n\n【图5｜行动号召】\n画面：新品主视觉 + 简洁信息区。\n文案：秋季新品已上线，点击了解更多。\n引导语：留言告诉我们，你最想把哪一件带回家？\n\n【配文（约80字）】\n秋天的第一份新意，从一件用心的日常好物开始。今年秋季新品以材质、触感与细节为出发点，延续我们一贯的品质坚持。现已上线，欢迎品鉴。\n\n【发布建议】\n时间：工作日 19:00–21:00 与周末 10:00 前后；\n形式：5 图轮播，图文比例 3:4；\n互动：置顶评论引导用户分享秋季使用场景。\n\n【合规提示】\n所有功效与参数表述须与产品实际情况一致，避免绝对化用语。",
+    "material_ids": [
+      "basic"
+    ],
+    "plan_version": 2
+  },
+  "archived_scripts": [],
+  "estimate": {
+    "signature": "1f96ac370d874556aedb226deb7ef0a6b1975420443ccbe5957d730bf329e419",
+    "plan_version": 2,
+    "spent": "2.00",
+    "remaining_cost": "6.00",
+    "completion_total": "8.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 31,
+    "expected_finish": "2026-11-04T06:30:39.113575+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [],
+    "feasible": true,
+    "step_id": "estimate-v2-before-save"
+  },
+  "saved_plan": {
+    "plan_id": "plan-f3dfa754-00a7-4f04-bc6d-d11337be028d",
+    "theme": "秋季新品推广",
+    "plan": {
+      "material_id": "basic",
+      "objective": "推广秋季新品，突出产品卖点与品牌调性，形成可执行的轻量图文推广方案",
+      "channel": "图文/社交媒体",
+      "version": 2
+    },
+    "script": {
+      "id": "script-8caf2dab8a976187",
+      "title": "秋日新序章｜秋季新品图文推广脚本",
+      "body": "【核心定位】\n以\"秋日新序章\"为概念，用轻量图文形式呈现秋季新品，兼顾产品卖点与品牌调性，适配社交媒体双端（微信/小红书）。\n\n【视觉基调】\n主色：枫叶橙、燕麦米、深咖；质感：干净留白、自然光、浅景深；版式：左文右图，统一圆角卡片。\n\n【图1｜封面：秋天的第一份新意】\n画面：新品主体于暖色背景前，旁置一片枫叶与一杯热饮。\n文案主标题：秋天的第一份新意，已经准备好。\n副标题：秋季新品 · 系列上市\n\n【图2｜产品特写：看得见的细节】\n画面：产品局部工艺与材质微距特写，配手部持握场景。\n文案：从材质到细节，每一处都为日常打磨。\n要点条列：① 选材更耐用 ② 触感更温润 ③ 使用更顺手\n（卖点数据以产品实际参数为准，发布前由品牌方核对）\n\n【图3｜场景：融入秋天的一天】\n画面：通勤、午后阅读、傍晚散步三格拼图。\n文案：从清晨到黄昏，它陪你把秋天过得更从容。\n\n【图4｜品牌：我们为什么做这件新品】\n画面：品牌工作场景或设计手稿，低饱和暖调。\n文案：我们相信，好设计应该让生活更轻松。\n品牌承诺：坚持品质、注重细节、持续倾听用户反馈。\n\n【图5｜行动号召】\n画面：新品主视觉 + 简洁信息区。\n文案：秋季新品已上线，点击了解更多。\n引导语：留言告诉我们，你最想把哪一件带回家？\n\n【配文（约80字）】\n秋天的第一份新意，从一件用心的日常好物开始。今年秋季新品以材质、触感与细节为出发点，延续我们一贯的品质坚持。现已上线，欢迎品鉴。\n\n【发布建议】\n时间：工作日 19:00–21:00 与周末 10:00 前后；\n形式：5 图轮播，图文比例 3:4；\n互动：置顶评论引导用户分享秋季使用场景。\n\n【合规提示】\n所有功效与参数表述须与产品实际情况一致，避免绝对化用语。",
+      "material_ids": [
+        "basic"
+      ],
+      "plan_version": 2
+    },
+    "material": {
+      "id": "basic",
+      "name": "轻量图文素材包",
+      "topics": [
+        "新品",
+        "推广",
+        "秋季"
+      ],
+      "coverage": [
+        "product",
+        "brand"
+      ],
+      "license_cost": "5",
+      "minutes": 30
+    },
+    "execution_steps": [
+      "检索并核对素材",
+      "选择活动形式与目标",
+      "核算预算和耗时",
+      "生成脚本",
+      "复核后保存方案"
+    ],
+    "steps": {
+      "search": {
+        "status": "succeeded",
+        "depends_on": [],
+        "artifact_id": "search-results",
+        "plan_version": 0
+      },
+      "select": {
+        "status": "succeeded",
+        "depends_on": [
+          "search"
+        ],
+        "artifact_id": "basic",
+        "plan_version": 2
+      },
+      "estimate-v1-before-script": {
+        "status": "superseded",
+        "depends_on": [
+          "select"
+        ],
+        "artifact_id": "estimate-v1-before-script",
+        "plan_version": 1
+      },
+      "script": {
+        "status": "succeeded",
+        "depends_on": [
+          "select",
+          "estimate-v2-before-script"
+        ],
+        "artifact_id": "script-8caf2dab8a976187",
+        "plan_version": 2
+      },
+      "estimate-v1-before-save": {
+        "status": "superseded",
+        "depends_on": [
+          "script"
+        ],
+        "artifact_id": null,
+        "plan_version": 1
+      },
+      "save": {
+        "status": "succeeded",
+        "depends_on": [
+          "script",
+          "estimate-v2-before-save"
+        ],
+        "artifact_id": "plan-f3dfa754-00a7-4f04-bc6d-d11337be028d",
+        "plan_version": 2
+      },
+      "estimate-v2-before-script": {
+        "status": "succeeded",
+        "depends_on": [
+          "select"
+        ],
+        "artifact_id": "estimate-v2-before-script",
+        "plan_version": 2
+      },
+      "estimate-v2-before-save": {
+        "status": "succeeded",
+        "depends_on": [
+          "select",
+          "script"
+        ],
+        "artifact_id": "estimate-v2-before-save",
+        "plan_version": 2
+      }
+    },
+    "ledger": [
+      {
+        "key": "script-8caf2dab8a976187",
+        "amount": "2.00",
+        "label": "script generation"
+      },
+      {
+        "key": "plan-f3dfa754-00a7-4f04-bc6d-d11337be028d:license",
+        "amount": "5.00",
+        "label": "material license"
+      },
+      {
+        "key": "plan-f3dfa754-00a7-4f04-bc6d-d11337be028d:save",
+        "amount": "1.00",
+        "label": "plan save"
+      }
+    ],
+    "total_cost": "8.00",
+    "budget_remaining": "12.00",
+    "deadline": "2026-11-04T14:58:36.569287+08:00",
+    "saved_at": "2026-11-04T05:59:39.924384+00:00",
+    "remaining_preparation_minutes": 31,
+    "expected_finish": "2026-11-04T06:30:39.924384+00:00",
+    "notice": "合成素材与模拟费用；此记录证明方案保存，不代表活动已发布。"
+  },
+  "ledger": [
+    {
+      "key": "script-8caf2dab8a976187",
+      "amount": "2.00",
+      "label": "script generation"
+    },
+    {
+      "key": "plan-f3dfa754-00a7-4f04-bc6d-d11337be028d:license",
+      "amount": "5.00",
+      "label": "material license"
+    },
+    {
+      "key": "plan-f3dfa754-00a7-4f04-bc6d-d11337be028d:save",
+      "amount": "1.00",
+      "label": "plan save"
+    }
+  ],
+  "counts": {
+    "decisions": 9,
+    "tools": 9
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T05:59:26.121811+00:00",
+  "updated_at": "2026-11-04T05:59:40.986455+00:00",
+  "spent_total": "8.00",
+  "budget_remaining": "12.00",
+  "completion_estimate": {
+    "signature": "5828775762eb6939c45c8c735dffc3a1d24841f7a460780a620bb3ef3f0f9920",
+    "plan_version": 2,
+    "spent": "8.00",
+    "remaining_cost": "0.00",
+    "completion_total": "8.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 0,
+    "expected_finish": "2026-11-04T05:59:40.986455+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [],
+    "feasible": true
+  },
+  "trace_count": 9,
+  "evidence_boundary": "real_model_tool_decisions"
+}

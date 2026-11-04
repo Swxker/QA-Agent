@@ -1,0 +1,123 @@
+{
+  "run_id": "81aa1b34-0b61-40da-8462-07b5622410ea",
+  "provider": "mock",
+  "model_config": {
+    "model": "offline-policy",
+    "base_url": null
+  },
+  "status": "incomplete",
+  "reason_code": "MODEL_STOPPED",
+  "reason": "无可行方案：预算缺口0.00，时间缺口0分钟，缺少资料['brand']。",
+  "input": {
+    "theme": "公益活动",
+    "budget": "20",
+    "deadline": "2026-11-05T13:20:54.053114+08:00"
+  },
+  "missing_fields": [],
+  "plan": {
+    "material_id": "partial",
+    "objective": "促进新品认知和互动",
+    "channel": "社交内容",
+    "version": 1
+  },
+  "plan_history": [],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "partial",
+      "plan_version": 1
+    },
+    "estimate-v1-before-script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v1-before-script",
+      "plan_version": 1
+    },
+    "script": {
+      "status": "pending",
+      "depends_on": [
+        "estimate-v1-before-script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "estimate-v1-before-save": {
+      "status": "pending",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "save": {
+      "status": "pending",
+      "depends_on": [
+        "script",
+        "estimate-v1-before-save"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    }
+  },
+  "script": null,
+  "archived_scripts": [],
+  "estimate": {
+    "signature": "854ab2bf12ab882439b385e2dae645fa0178e1f037410d2fb776dd7ffdf2d788",
+    "plan_version": 1,
+    "spent": "0.00",
+    "remaining_cost": "6.00",
+    "completion_total": "6.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 31,
+    "expected_finish": "2026-11-04T05:51:54.737870+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [
+      "brand"
+    ],
+    "feasible": false,
+    "step_id": "estimate-v1-before-script"
+  },
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 4,
+    "tools": 4
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T05:20:54.677251+00:00",
+  "updated_at": "2026-11-04T05:20:54.762892+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "20.00",
+  "completion_estimate": {
+    "signature": "854ab2bf12ab882439b385e2dae645fa0178e1f037410d2fb776dd7ffdf2d788",
+    "plan_version": 1,
+    "spent": "0.00",
+    "remaining_cost": "6.00",
+    "completion_total": "6.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 31,
+    "expected_finish": "2026-11-04T05:51:54.762892+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [
+      "brand"
+    ],
+    "feasible": false
+  },
+  "trace_count": 4,
+  "evidence_boundary": "offline_mock_flow_only"
+}

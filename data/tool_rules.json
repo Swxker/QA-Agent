@@ -1,0 +1,9 @@
+{
+  "currency":"simulated_units",
+  "script_cost":"2",
+  "save_cost":"1",
+  "script_minutes":10,
+  "save_minutes":1,
+  "required_coverage":["product","brand"],
+  "notes":"Search, estimate and revision are free. Script is charged on committed success. License and save charged atomically on save. Failed injected tools are pre-commit and free. Material minutes represent preparation still required before saving the campaign plan; no actual publishing is performed."
+}

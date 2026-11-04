@@ -1,0 +1,59 @@
+{
+  "provider": "deepseek",
+  "results": [
+    {
+      "case": "budget-replan",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "8.00",
+      "counts": {
+        "decisions": 9,
+        "tools": 9
+      },
+      "run_id": "cdb4f104-0fa9-4cb9-9eed-a647205f60df",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true,
+        "observed_12_then_8": true,
+        "spent_8": true
+      }
+    },
+    {
+      "case": "tool-failure",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "8.00",
+      "counts": {
+        "decisions": 10,
+        "tools": 10
+      },
+      "run_id": "1309cd48-f238-41b1-95ab-d6cf788e077d",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true,
+        "failure_recorded": true,
+        "failed_attempts_free": true,
+        "script_generated_once": true
+      }
+    },
+    {
+      "case": "save-failure",
+      "status": "completed",
+      "reason_code": "SAVED",
+      "spent": "12.00",
+      "counts": {
+        "decisions": 8,
+        "tools": 8
+      },
+      "run_id": "e77f83b5-3460-4a50-bce8-f1e1b9812e2b",
+      "checks": {
+        "expected_status": true,
+        "within_call_limits": true,
+        "failure_recorded": true,
+        "failed_attempts_free": true,
+        "script_generated_once": true
+      }
+    }
+  ],
+  "storage_note": "Run snapshots may originate from separate local databases; run_id identifies each execution."
+}

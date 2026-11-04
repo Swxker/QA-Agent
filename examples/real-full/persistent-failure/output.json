@@ -1,0 +1,210 @@
+{
+  "run_id": "5b297c79-df9e-44d9-b8fd-c77b77fa8002",
+  "provider": "deepseek",
+  "model_config": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "status": "incomplete",
+  "reason_code": "MODEL_STOPPED",
+  "reason": "Plan remains unsaved: save_plan failed twice (second failure marked non-retryable). Retained artifacts: feasible plan v2 on the \"basic\" lightweight graphic/text pack (product+brand coverage, total 8 units vs budget 10, ~31 min remaining, well before deadline) and original Chinese script \"秋风起，新意到——秋季新品图文推广方案\" (script-6f0cd4e917408ef3, 2 units charged). Premium short video was evaluated first but quoted 12 units, 2 over budget, so it was dropped in favor of the user's graphic fallback. Resume with save_plan once service recovers to settle remaining 6 units.",
+  "input": {
+    "theme": "秋季新品推广，优先评估高质感短视频，超预算可改用轻量图文",
+    "budget": "10",
+    "deadline": "2026-11-05T14:02:47.879979+08:00"
+  },
+  "missing_fields": [],
+  "plan": {
+    "material_id": "basic",
+    "objective": "秋季新品推广：以轻量图文呈现新品卖点与品牌调性",
+    "channel": "图文",
+    "version": 2
+  },
+  "plan_history": [
+    {
+      "plan": {
+        "material_id": "premium",
+        "objective": "秋季新品推广：以高质感短视频呈现新品卖点与品牌形象",
+        "channel": "短视频",
+        "version": 1
+      },
+      "steps": {
+        "search": {
+          "status": "succeeded",
+          "depends_on": [],
+          "artifact_id": "search-results",
+          "plan_version": 0
+        },
+        "select": {
+          "status": "succeeded",
+          "depends_on": [
+            "search"
+          ],
+          "artifact_id": "premium",
+          "plan_version": 1
+        },
+        "estimate-v1-before-script": {
+          "status": "succeeded",
+          "depends_on": [
+            "select"
+          ],
+          "artifact_id": "estimate-v1-before-script",
+          "plan_version": 1
+        },
+        "script": {
+          "status": "pending",
+          "depends_on": [
+            "estimate-v1-before-script"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        },
+        "estimate-v1-before-save": {
+          "status": "pending",
+          "depends_on": [
+            "script"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        },
+        "save": {
+          "status": "pending",
+          "depends_on": [
+            "script",
+            "estimate-v1-before-save"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        }
+      }
+    }
+  ],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "basic",
+      "plan_version": 2
+    },
+    "estimate-v1-before-script": {
+      "status": "superseded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v1-before-script",
+      "plan_version": 1
+    },
+    "script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select",
+        "estimate-v2-before-script"
+      ],
+      "artifact_id": "script-6f0cd4e917408ef3",
+      "plan_version": 2
+    },
+    "estimate-v1-before-save": {
+      "status": "superseded",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "save": {
+      "status": "failed",
+      "depends_on": [
+        "script",
+        "estimate-v2-before-save"
+      ],
+      "artifact_id": null,
+      "plan_version": 2,
+      "error_code": "INJECTED_FAILURE"
+    },
+    "estimate-v2-before-script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v2-before-script",
+      "plan_version": 2
+    },
+    "estimate-v2-before-save": {
+      "status": "succeeded",
+      "depends_on": [
+        "select",
+        "script"
+      ],
+      "artifact_id": "estimate-v2-before-save",
+      "plan_version": 2
+    }
+  },
+  "script": {
+    "id": "script-6f0cd4e917408ef3",
+    "title": "秋风起，新意到——秋季新品图文推广方案",
+    "body": "【图文主题】秋风起，新意到\n\n一、内容定位\n以秋季氛围为线索，轻量图文承载新品卖点与品牌调性，兼顾传播效率与质感。\n\n二、图文结构（共6张）\n1. 封面：暖调落叶与新品剪影，主标题「秋风起，新意到」，副标题点明秋季新品上市。\n2. 品牌篇：一段简洁的品牌主张文案，说明本季新品延续的品质坚持与设计理念。\n3. 卖点篇一：聚焦新品核心功能/材质，配产品细节特写图与一句短文案。\n4. 卖点篇二：以使用场景图呈现新品在秋季日常中的实际体验。\n5. 组合搭配：用平铺图展示新品系列的多色/多规格选择，方便用户对照选购。\n6. 行动引导：放置购买或了解更多的方式，附品牌标识与季节性口号。\n\n三、文案要点\n- 语气温暖克制，避免夸张承诺，只描述可验证的产品特性。\n- 每张图文案控制在30字以内，保证移动端可读性。\n\n四、视觉规范\n- 主色：焦糖棕、燕麦色、暖橙，辅以深绿点缀。\n- 字体：标题用粗黑体，正文用常规无衬线字体。\n- 图片统一暖色调，光影柔和，保持系列感。\n\n五、投放与衡量\n- 渠道：图文（公众号/社媒信息流）。\n- 观察指标：完读率、收藏数、点击转化；活动结束后汇总复盘。\n",
+    "material_ids": [
+      "basic"
+    ],
+    "plan_version": 2
+  },
+  "archived_scripts": [],
+  "estimate": {
+    "signature": "74e01e678d0267fc548425d5db7c611fc939a05663180d72702b807c4c85fcff",
+    "plan_version": 2,
+    "spent": "2.00",
+    "remaining_cost": "6.00",
+    "completion_total": "8.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 31,
+    "expected_finish": "2026-11-04T06:35:30.488432+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [],
+    "feasible": true,
+    "step_id": "estimate-v2-before-save"
+  },
+  "saved_plan": null,
+  "ledger": [
+    {
+      "key": "script-6f0cd4e917408ef3",
+      "amount": "2.00",
+      "label": "script generation"
+    }
+  ],
+  "counts": {
+    "decisions": 10,
+    "tools": 10
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T06:04:19.870485+00:00",
+  "updated_at": "2026-11-04T06:04:34.618067+00:00",
+  "spent_total": "2.00",
+  "budget_remaining": "8.00",
+  "completion_estimate": {
+    "signature": "74e01e678d0267fc548425d5db7c611fc939a05663180d72702b807c4c85fcff",
+    "plan_version": 2,
+    "spent": "2.00",
+    "remaining_cost": "6.00",
+    "completion_total": "8.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 31,
+    "expected_finish": "2026-11-04T06:35:34.618067+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [],
+    "feasible": true
+  },
+  "trace_count": 10,
+  "evidence_boundary": "real_model_tool_decisions"
+}

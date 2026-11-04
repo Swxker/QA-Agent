@@ -1,0 +1,132 @@
+{
+  "plan_id": "plan-f18529fa-fa53-456b-8dd9-cbf3d6ce7c50",
+  "theme": "秋季新品推广，优先评估高质感短视频，超预算可改用轻量图文",
+  "plan": {
+    "material_id": "basic",
+    "objective": "秋季新品推广：以轻量图文清晰传达秋季新品卖点与品牌调性，在预算内完成推广脚本与计划。",
+    "channel": "轻量图文",
+    "version": 2
+  },
+  "script": {
+    "id": "script-c590936a4e750e11",
+    "title": "秋季新品图文推广脚本：把秋天穿在身上",
+    "body": "【核心主题】秋季新品推广 · 轻量图文（6 页图文卡片，可适配公众号 / 小红书 / 朋友圈）\n\n【传播目标】用当季质感语言讲清新品，建立品牌记忆点，引导用户到店/到页面了解与选购。\n\n—— 第 1 页 · 封面（品牌先行）——\n主标题：一抹秋色，刚刚好。\n副标题：秋季新品 · 现已上市\n画面建议：暖调自然光下的布料/单品特写，留白处放品牌标识。\n文案钩子：「今年秋天，我们只做三件事：更暖、更轻、更有型。」\n\n—— 第 2 页 · 产品价值点（每页一逻辑：先感受、再事实、最后行动）——\n小标题：先说感受——一穿上，就懂秋天的舒服\n正文：贴肤的柔软、恰到好处的厚度，早晚温差不再是困扰。\n画面建议：单品平铺 + 质感纹理近景（针脚、面料纹路）。\n\n—— 第 3 页 · 产品细节——\n小标题：再说细节——看得见的用心\n要点（留空填入真实参数）：\n① 面料：____\n② 版型：____\n③ 颜色：____（秋日限定色系）\n④ 尺码建议：____\n画面建议：细节四宫格拼图。\n\n—— 第 4 页 · 场景搭配——\n小标题：最后说搭配——一件单品，三种秋天\n场景 A 通勤：简约内搭 + 本季新品外搭\n场景 B 周末：舒适叠穿 + 同色系配饰\n场景 C 出行：轻便层次，应对早晚温差\n画面建议：同一单品的三组造型平铺或模特背影。\n\n—— 第 5 页 · 品牌与信任——\n小标题：为什么是这个品牌\n文案：我们坚持____（品牌主张/工艺/服务承诺），让每件秋装都经得住时间。\n信任元素：尺码无忧退换 / 真实用户反馈（引用真实评价）/ 售后说明。\n画面建议：品牌标识 + 简洁承诺图标。\n\n—— 第 6 页 · 行动引导——\n主标题：秋天很短，喜欢的要早点收好。\n副标题：秋季新品限时活动 · ____（截止日期与权益）\n行动按钮文案：立即了解秋季新品\n画面建议：新品全家福 + 明显引导按钮。\n\n—— 配文（发布用短文案）——\n秋天来了，我们准备了这一季的答案。\n更暖一点、更轻一点、更有型一点。\n秋季新品已上市，点击了解你的秋日限定搭配。\n\n—— 制作与投放建议 ——\n• 图文尺寸：9:16 或 1:1 双版本，主投生活/时尚兴趣人群。\n• 发布节奏：上市首日全套发布，第 3 天更新场景搭配页，第 7 天更新活动页。\n• 合规提示：面料、功能与活动权益等需按实际产品信息填写，避免夸大表述。\n• 素材说明：基于「轻量图文素材包」整理，所有参数与活动信息请在发布前核对。",
+    "material_ids": [
+      "basic"
+    ],
+    "plan_version": 2
+  },
+  "material": {
+    "id": "basic",
+    "name": "轻量图文素材包",
+    "topics": [
+      "新品",
+      "推广",
+      "秋季"
+    ],
+    "coverage": [
+      "product",
+      "brand"
+    ],
+    "license_cost": "5",
+    "minutes": 30
+  },
+  "execution_steps": [
+    "检索并核对素材",
+    "选择活动形式与目标",
+    "核算预算和耗时",
+    "生成脚本",
+    "复核后保存方案"
+  ],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "basic",
+      "plan_version": 2
+    },
+    "estimate-v1-before-script": {
+      "status": "superseded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v1-before-script",
+      "plan_version": 1
+    },
+    "script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select",
+        "estimate-v2-before-script"
+      ],
+      "artifact_id": "script-c590936a4e750e11",
+      "plan_version": 2
+    },
+    "estimate-v1-before-save": {
+      "status": "superseded",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "save": {
+      "status": "succeeded",
+      "depends_on": [
+        "script",
+        "estimate-v2-before-save"
+      ],
+      "artifact_id": "plan-f18529fa-fa53-456b-8dd9-cbf3d6ce7c50",
+      "plan_version": 2
+    },
+    "estimate-v2-before-script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v2-before-script",
+      "plan_version": 2
+    },
+    "estimate-v2-before-save": {
+      "status": "succeeded",
+      "depends_on": [
+        "select",
+        "script"
+      ],
+      "artifact_id": "estimate-v2-before-save",
+      "plan_version": 2
+    }
+  },
+  "ledger": [
+    {
+      "key": "script-c590936a4e750e11",
+      "amount": "2.00",
+      "label": "script generation"
+    },
+    {
+      "key": "plan-f18529fa-fa53-456b-8dd9-cbf3d6ce7c50:license",
+      "amount": "5.00",
+      "label": "material license"
+    },
+    {
+      "key": "plan-f18529fa-fa53-456b-8dd9-cbf3d6ce7c50:save",
+      "amount": "1.00",
+      "label": "plan save"
+    }
+  ],
+  "total_cost": "8.00",
+  "budget_remaining": "2.00",
+  "deadline": "2026-11-05T14:02:47.879979+08:00",
+  "saved_at": "2026-11-04T06:04:51.015220+00:00",
+  "remaining_preparation_minutes": 31,
+  "expected_finish": "2026-11-04T06:35:51.015220+00:00",
+  "notice": "合成素材与模拟费用；此记录证明方案保存，不代表活动已发布。"
+}

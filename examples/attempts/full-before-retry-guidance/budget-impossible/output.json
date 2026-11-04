@@ -1,0 +1,119 @@
+{
+  "run_id": "6c476adb-eaf8-4315-a1e8-6d1c866bc877",
+  "provider": "deepseek",
+  "model_config": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "status": "incomplete",
+  "reason_code": "MODEL_STOPPED",
+  "reason": "无可行方案：预算 7 单位，脚本费 2 + 保存费 1 固定占 3 单位，素材授权最多可用 4 单位。检索到的素材仅有两项：高质感新品短视频素材包授权 9 单位（超预算），轻量图文素材包授权 5 单位（合计 8 单位，超预算 1 单位）。按授权成本上限 4 重新检索未返回任何候选素材。由于要求同时覆盖产品与品牌且不允许部分覆盖保存，无法在预算内完成，故停止并如实说明缺口。",
+  "input": {
+    "theme": "秋季新品推广",
+    "budget": "7",
+    "deadline": "2026-11-05T13:58:36.569287+08:00"
+  },
+  "missing_fields": [],
+  "plan": {
+    "material_id": "basic",
+    "objective": "针对秋季目标人群推广当季新品，突出产品卖点与品牌调性，覆盖产品与品牌两类信息。",
+    "channel": "社交媒体图文种草",
+    "version": 1
+  },
+  "plan_history": [],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 1
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "basic",
+      "plan_version": 1
+    },
+    "estimate-v1-before-script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v1-before-script",
+      "plan_version": 1
+    },
+    "script": {
+      "status": "pending",
+      "depends_on": [
+        "estimate-v1-before-script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "estimate-v1-before-save": {
+      "status": "pending",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "save": {
+      "status": "pending",
+      "depends_on": [
+        "script",
+        "estimate-v1-before-save"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    }
+  },
+  "script": null,
+  "archived_scripts": [],
+  "estimate": {
+    "signature": "854ab2bf12ab882439b385e2dae645fa0178e1f037410d2fb776dd7ffdf2d788",
+    "plan_version": 1,
+    "spent": "0.00",
+    "remaining_cost": "8.00",
+    "completion_total": "8.00",
+    "budget_gap": "1.00",
+    "remaining_minutes": 41,
+    "expected_finish": "2026-11-04T06:40:06.858618+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [],
+    "feasible": false,
+    "step_id": "estimate-v1-before-script"
+  },
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 5,
+    "tools": 5
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T05:59:02.575748+00:00",
+  "updated_at": "2026-11-04T05:59:09.429252+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "7.00",
+  "completion_estimate": {
+    "signature": "854ab2bf12ab882439b385e2dae645fa0178e1f037410d2fb776dd7ffdf2d788",
+    "plan_version": 1,
+    "spent": "0.00",
+    "remaining_cost": "8.00",
+    "completion_total": "8.00",
+    "budget_gap": "1.00",
+    "remaining_minutes": 41,
+    "expected_finish": "2026-11-04T06:40:09.429252+00:00",
+    "time_gap_minutes": 0,
+    "missing_coverage": [],
+    "feasible": false
+  },
+  "trace_count": 5,
+  "evidence_boundary": "real_model_tool_decisions"
+}

@@ -1,0 +1,5 @@
+{
+  "command": "python -m src.cli run --provider deepseek --input examples/inputs/budget-replan.json --request-key unavailable-deepseek-demo --output examples/real-unavailable",
+  "actual_exit_code": 5,
+  "stderr": "Executing provider=deepseek; request_key=unavailable-deepseek-demo\n"
+}

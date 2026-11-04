@@ -1,0 +1,193 @@
+{
+  "run_id": "3a6327f6-dc8c-4419-a645-d1142c77c0f2",
+  "provider": "mock",
+  "model_config": {
+    "model": "offline-policy",
+    "base_url": null
+  },
+  "status": "incomplete",
+  "reason_code": "MODEL_STOPPED",
+  "reason": "无可行方案：预算缺口0.00，时间缺口36.017分钟，缺少资料[]。",
+  "input": {
+    "theme": "秋季新品推广",
+    "budget": "20",
+    "deadline": "2026-11-04T13:25:54.053114+08:00"
+  },
+  "missing_fields": [],
+  "plan": {
+    "material_id": "basic",
+    "objective": "采用轻量内容满足预算与截止时间",
+    "channel": "图文",
+    "version": 2
+  },
+  "plan_history": [
+    {
+      "plan": {
+        "material_id": "premium",
+        "objective": "促进新品认知和互动",
+        "channel": "社交内容",
+        "version": 1
+      },
+      "steps": {
+        "search": {
+          "status": "succeeded",
+          "depends_on": [],
+          "artifact_id": "search-results",
+          "plan_version": 0
+        },
+        "select": {
+          "status": "succeeded",
+          "depends_on": [
+            "search"
+          ],
+          "artifact_id": "premium",
+          "plan_version": 1
+        },
+        "estimate-v1-before-script": {
+          "status": "succeeded",
+          "depends_on": [
+            "select"
+          ],
+          "artifact_id": "estimate-v1-before-script",
+          "plan_version": 1
+        },
+        "script": {
+          "status": "pending",
+          "depends_on": [
+            "estimate-v1-before-script"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        },
+        "estimate-v1-before-save": {
+          "status": "pending",
+          "depends_on": [
+            "script"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        },
+        "save": {
+          "status": "pending",
+          "depends_on": [
+            "script",
+            "estimate-v1-before-save"
+          ],
+          "artifact_id": null,
+          "plan_version": 1
+        }
+      }
+    }
+  ],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    },
+    "select": {
+      "status": "succeeded",
+      "depends_on": [
+        "search"
+      ],
+      "artifact_id": "basic",
+      "plan_version": 2
+    },
+    "estimate-v1-before-script": {
+      "status": "superseded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v1-before-script",
+      "plan_version": 1
+    },
+    "script": {
+      "status": "pending",
+      "depends_on": [
+        "estimate-v2-before-script"
+      ],
+      "artifact_id": null,
+      "plan_version": 2
+    },
+    "estimate-v1-before-save": {
+      "status": "superseded",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 1
+    },
+    "save": {
+      "status": "pending",
+      "depends_on": [
+        "script",
+        "estimate-v2-before-save"
+      ],
+      "artifact_id": null,
+      "plan_version": 2
+    },
+    "estimate-v2-before-script": {
+      "status": "succeeded",
+      "depends_on": [
+        "select"
+      ],
+      "artifact_id": "estimate-v2-before-script",
+      "plan_version": 2
+    },
+    "estimate-v2-before-save": {
+      "status": "pending",
+      "depends_on": [
+        "script"
+      ],
+      "artifact_id": null,
+      "plan_version": 2
+    }
+  },
+  "script": null,
+  "archived_scripts": [],
+  "estimate": {
+    "signature": "b05a9321e6a257973ebe36cd494f70cece2832c0e8cbe9415f3220b219dbb5c0",
+    "plan_version": 2,
+    "spent": "0.00",
+    "remaining_cost": "8.00",
+    "completion_total": "8.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 41,
+    "expected_finish": "2026-11-04T06:01:55.068029+00:00",
+    "time_gap_minutes": 36.017,
+    "missing_coverage": [],
+    "feasible": false,
+    "step_id": "estimate-v2-before-script"
+  },
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 6,
+    "tools": 6
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T05:20:54.969010+00:00",
+  "updated_at": "2026-11-04T05:20:55.098229+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "20.00",
+  "completion_estimate": {
+    "signature": "b05a9321e6a257973ebe36cd494f70cece2832c0e8cbe9415f3220b219dbb5c0",
+    "plan_version": 2,
+    "spent": "0.00",
+    "remaining_cost": "8.00",
+    "completion_total": "8.00",
+    "budget_gap": "0.00",
+    "remaining_minutes": 41,
+    "expected_finish": "2026-11-04T06:01:55.098229+00:00",
+    "time_gap_minutes": 36.017,
+    "missing_coverage": [],
+    "feasible": false
+  },
+  "trace_count": 6,
+  "evidence_boundary": "offline_mock_flow_only"
+}

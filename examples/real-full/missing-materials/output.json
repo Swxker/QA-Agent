@@ -1,0 +1,47 @@
+{
+  "run_id": "2b0ad597-fccc-4314-be7d-1b516041d7cb",
+  "provider": "deepseek",
+  "model_config": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "status": "incomplete",
+  "reason_code": "MODEL_STOPPED",
+  "reason": "Search returned zero material candidates on three attempts (no premium option, no budget-limited option), so no material exists to select. Without a material_id, revise_plan/estimate/generate cannot proceed and required product+brand coverage cannot be met; no script or plan was created and nothing was charged.",
+  "input": {
+    "theme": "深海科学展览",
+    "budget": "20",
+    "deadline": "2026-11-05T14:02:47.879979+08:00"
+  },
+  "missing_fields": [],
+  "plan": null,
+  "plan_history": [],
+  "steps": {
+    "search": {
+      "status": "succeeded",
+      "depends_on": [],
+      "artifact_id": "search-results",
+      "plan_version": 0
+    }
+  },
+  "script": null,
+  "archived_scripts": [],
+  "estimate": null,
+  "saved_plan": null,
+  "ledger": [],
+  "counts": {
+    "decisions": 4,
+    "tools": 4
+  },
+  "limits": {
+    "decisions": 20,
+    "tools": 20
+  },
+  "resumptions": 0,
+  "created_at": "2026-11-04T06:03:26.956651+00:00",
+  "updated_at": "2026-11-04T06:03:32.184337+00:00",
+  "spent_total": "0.00",
+  "budget_remaining": "20.00",
+  "trace_count": 4,
+  "evidence_boundary": "real_model_tool_decisions"
+}
